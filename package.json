@@ -1,0 +1,20 @@
+{
+  "name": "laBanana",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vreyesd/laBanana.git"
+  },
+  "keywords": [],
+  "author": "Victor Reyes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vreyesd/laBanana/issues"
+  },
+  "homepage": "https://github.com/vreyesd/laBanana#readme"
+}
