@@ -4,17 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha",
+    "test:watch": "mocha --watch --compilers"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vreyesd/laBanana.git"
   },
+  "pre-commit": [
+    "test"
+  ],
   "keywords": [],
   "author": "Victor Reyes",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vreyesd/laBanana/issues"
   },
-  "homepage": "https://github.com/vreyesd/laBanana#readme"
+  "homepage": "https://github.com/vreyesd/laBanana#readme",
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "should": "^13.2.3"
+  }
 }

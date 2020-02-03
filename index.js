@@ -9,16 +9,16 @@ const main = () => {
     for(let i=0; i<orders.length; i++) {
         const order = orders[i]
 
-        exchange.newOrder(order)
+        exchange.setNewOrder(order)
     }
 
-    console.log(JSON.stringify({
-        transactions: exchange.transactionsToPrint(),
+    console.log({
+        transactions: JSON.stringify(exchange.transactions),
         orders: [
-            ...exchange.ordersToPrint('ask').filter(o => !o.executed), 
-            ...exchange.ordersToPrint('bid').filter(o => !o.executed)
+            ...exchange.ordersToPrint('ask').filter(o => o.remaining), 
+            ...exchange.ordersToPrint('bid').filter(o => o.remaining)
         ]
-    }))
+    })
 }
 
 main()
